@@ -1,3 +1,115 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>UrbanCart Store Concept | Pixel Studio BD</title><meta name="description" content="A product-focused storefront concept designed to make categories and featured items easy to scan."><link rel="stylesheet" href="style.css"></head><body>
-<div class="topbar"><div class="container"><span>✦ Portfolio concept demonstration</span><span>Pixel Studio BD</span></div></div><header class="navbar"><div class="container nav-inner"><a class="brand" href="index.html"><span class="brand-mark">P.</span><span>Pixel Studio <em>BD</em></span></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰ Menu</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav><div class="nav-actions"><a class="btn btn-primary" href="contact.html">Start a Project ↗</a></div></div></header>
-<main><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Home</a> / <a href="portfolio.html">Portfolio</a> / UrbanCart Store</div><span class="tag">DEMO CONCEPT · Online shop concept</span><h1>UrbanCart Store</h1><p>A product-focused storefront concept designed to make categories and featured items easy to scan.</p></div></section><section class="section"><div class="container detail-grid"><div class="detail-preview"><div class="project-visual visual-shop"><div class="mini-page"><div class="mini-bar"></div><div class="mini-line"></div><div class="mini-line short"></div><div class="mini-blocks"><i></i><i></i><i></i></div></div></div><div class="disclaimer">This is a visual concept preview for demonstration. It is not a separate live client website.</div></div><div class="detail-copy"><div class="eyebrow">THE IDEA</div><h2>A friendly storefront layout that puts products first.</h2><p>This sample shows one possible direction for a website in this category. Colours, copy, sections and features can be adjusted to suit a real business.</p><h3>Possible features</h3><ul class="check-list"><li>Featured product area</li><li>Category and collection blocks</li><li>Product highlights and promotions</li><li>Enquiry or order contact flow</li></ul><a class="btn btn-primary" href="contact.html?plan=Custom">Create something like this ↗</a><p><a href="portfolio.html">← Back to all concepts</a></p></div></div></section></main><footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">P.</span><span>Pixel Studio <em>BD</em></span></a><p>Sample concepts to help you picture your next website.</p></div><div><h4>Explore</h4><div class="footer-links"><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a></div></div><div><h4>Contact</h4><div class="footer-links"><a href="contact.html">Discuss a project</a></div></div></div><div class="copyright"><span>© 2026 Pixel Studio BD</span><span>Concept demo</span></div></div></footer><a class="wa-float" data-wa href="https://wa.me/8801336478777">WhatsApp ↗</a><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UrbanCart Store | Pixel Studio BD</title>
+<meta name="description" content="UrbanCart online store website design concept by Pixel Studio BD.">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.store-hero{background:#f8fafc;padding:35px 0 45px}
+.store-brand{font-size:24px;font-weight:900;color:#10234b}
+.store-brand span{color:#2563eb}
+.store-layout{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;margin-top:28px}
+.store-copy h1{font-size:clamp(34px,5vw,52px);line-height:1.12;color:#10234b;margin:15px 0}
+.store-copy p{color:#64748b;line-height:1.8}
+.store-label{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:8px 12px;border-radius:25px;font-size:12px;font-weight:800}
+.store-art{background:linear-gradient(145deg,#dbeafe,#eff6ff);padding:20px;border-radius:24px}
+.store-window{background:white;border-radius:15px;overflow:hidden;box-shadow:0 12px 35px #0f172a10}
+.store-window-head{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e2e8f0;gap:10px}
+.store-window-head strong{color:#10234b}
+.store-window-head span{font-size:12px;color:#64748b}
+.store-banner{margin:14px;background:linear-gradient(120deg,#172554,#2563eb);color:white;border-radius:12px;padding:22px 16px}
+.store-banner small{color:#bfdbfe;font-weight:700}
+.store-banner h2{font-size:25px;margin:8px 0}
+.store-banner p{color:#dbeafe;font-size:12px}
+.store-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:0 14px 16px}
+.store-product{border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;text-align:center;padding-bottom:10px}
+.store-product-art{height:90px;display:grid;place-items:center;font-size:35px;background:linear-gradient(135deg,#eff6ff,#dbeafe)}
+.store-product strong{display:block;font-size:11px;margin:8px 3px 4px;color:#334155}
+.store-product small{font-size:11px;color:#2563eb;font-weight:800}
+.store-categories{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.store-categories span{padding:8px 12px;border-radius:22px;background:#e2e8f0;color:#334155;font-size:12px;font-weight:700}
+.store-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.store-feature{border:1px solid #e2e8f0;border-radius:16px;padding:20px;background:white}
+.store-feature div{font-size:28px}
+.store-feature h3{font-size:17px}
+.store-feature p{font-size:14px;line-height:1.7;color:#64748b}
+.store-notice{background:#eff6ff;padding:16px;border-radius:12px;margin-top:24px;font-size:13px;line-height:1.7;color:#334155}
+@media(max-width:750px){.store-layout{grid-template-columns:1fr}.store-features{grid-template-columns:1fr}.store-art{padding:12px}.store-banner h2{font-size:21px}.store-product-art{height:75px}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="container"><span>✦ Online Store Concept</span><span>Pixel Studio BD</span></div></div>
+
+<header class="navbar">
+<div class="container nav-inner">
+<a class="brand" href="index.html"><span class="brand-mark">P.</span><span>Pixel Studio <em>BD</em></span></a>
+<button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰ Menu</button>
+<nav class="nav-links">
+<a href="index.html">Home</a><a class="active" href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+</nav>
+<div class="nav-actions"><a class="btn btn-primary" href="contact.html">Start a Project ↗</a></div>
+</div>
+</header>
+
+<main>
+<section class="store-hero">
+<div class="container">
+<div class="store-brand">Urban<span>Cart</span></div>
+<div class="store-layout">
+<div class="store-copy">
+<span class="store-label">E-COMMERCE · CONCEPT DEMO</span>
+<h1>A smarter way to shop online.</h1>
+<p>A sample storefront design showing how products, categories and shopping information could be presented in a clean, mobile-friendly layout.</p>
+<div class="store-categories"><span>All Products</span><span>Fashion</span><span>Accessories</span></div>
+<a class="btn btn-primary" href="#products">Explore Products ↓</a>
+</div>
+
+<div class="store-art">
+<div class="store-window">
+<div class="store-window-head"><strong>UrbanCart Store</strong><span>♡　🛒 Cart concept</span></div>
+<div class="store-banner"><small>NEW COLLECTION</small><h2>Find Your Everyday Style</h2><p>Discover the latest picks for your lifestyle.</p></div>
+<div id="products" class="store-products">
+<div class="store-product"><div class="store-product-art">👟</div><strong>Everyday Sneakers</strong><small>$29.00</small></div>
+<div class="store-product"><div class="store-product-art">🎒</div><strong>Classic Backpack</strong><small>$24.00</small></div>
+<div class="store-product"><div class="store-product-art">⌚</div><strong>Modern Watch</strong><small>$35.00</small></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+<div class="section-head"><div class="eyebrow">STORE FEATURES</div><h2>A clean shopping experience</h2><p>Example sections for an online store design.</p></div>
+<div class="store-features">
+<article class="store-feature"><div>🛍️</div><h3>Product Showcase</h3><p>Display products with clear names, prices and visual cards.</p></article>
+<article class="store-feature"><div>📱</div><h3>Responsive Design</h3><p>Organise the storefront to fit common mobile and desktop screens.</p></article>
+<article class="store-feature"><div>🧾</div><h3>Order Flow Concept</h3><p>Plan a clear path from product browsing to enquiry or checkout.</p></article>
+</div>
+<div class="store-notice"><strong>Concept preview:</strong> UrbanCart Store is a sample design created by Md. Sayadat Hossain Shafi at Pixel Studio BD. Product prices are illustrative. The displayed cart and checkout are visual examples, not a working payment system.</div>
+</div>
+</section>
+
+<section class="section section-soft">
+<div class="container"><div class="cta-band"><div><h2>Planning an online store?</h2><p>Let's discuss the pages and shopping features you need.</p></div><a class="btn btn-primary" href="contact.html?plan=Advanced">Discuss Your Store ↗</a></div></div>
+</section>
+</main>
+
+<footer class="footer"><div class="container">
+<div class="footer-grid">
+<div><a class="brand" href="index.html"><span class="brand-mark">P.</span><span>Pixel Studio <em>BD</em></span></a><p>Website design by Md. Sayadat Hossain Shafi.</p></div>
+<div><h4>Explore</h4><div class="footer-links"><a href="portfolio.html">Portfolio</a><a href="services.html">Services</a><a href="about.html">About</a></div></div>
+<div><h4>Contact</h4><div class="footer-links"><a href="contact.html">Discuss a Project</a><a href="mailto:mdsayadathossain2007@gmail.com">Email</a></div></div>
+</div>
+<div class="copyright"><span>© 2026 Pixel Studio BD</span><span>Online store concept demo</span></div>
+</div></footer>
+
+<a class="wa-float" data-wa href="https://wa.me/8801336478777">WhatsApp ↗</a>
+<script src="script.js"></script>
+</body>
+</html>
